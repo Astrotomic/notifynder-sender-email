@@ -9,7 +9,7 @@
 
 [![Code Climate](https://img.shields.io/codeclimate/github/Astrotomic/notifynder-sender-email.svg?style=flat-square)](https://codeclimate.com/github/Astrotomic/notifynder-sender-email)
 
-[![Slack Team](https://img.shields.io/badge/slack-notifynder-orange.svg?style=flat-square)](https://astrotomic.slack.com)
+[![Slack Team](https://img.shields.io/badge/slack-astrotomic-orange.svg?style=flat-square)](https://astrotomic.slack.com)
 [![Slack join](https://img.shields.io/badge/slack-join-green.svg?style=social)](https://notifynder.signup.team)
 
 
