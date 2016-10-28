@@ -39,7 +39,7 @@ Astrotomic\Notifynder\NotifynderSenderEmailServiceProvider::class,
 
 Add the following array to `config/notifynder.php`
 
-```
+```php
 'senders' => [
     'email' => [
         'view' => 'your.email.view.name',
