@@ -34,10 +34,15 @@ class EmailSender implements SenderContract
     {
         $view = config('notifynder.senders.email.view');
         $callback = config('notifynder.senders.email.callback');
+        $store = config('notifynder.senders.email.store', false);
         foreach ($this->notifications as $notification) {
             Mail::send($view, compact('notification'), function (Message $message) use ($notification, $callback) {
                 return call_user_func($callback, $message, $notification);
             });
+        }
+
+        if($store) {
+            return $sender->send($this->notifications);
         }
 
         return true;
