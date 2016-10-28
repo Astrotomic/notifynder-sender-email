@@ -25,7 +25,6 @@ Documentation: **[Notifynder Docu](http://notifynder.info)**
 composer require astrotomic/notifynder-sender-email
 ```
 
-
 ### Step 2
 
 Add the following string to `config/app.php`
@@ -34,4 +33,20 @@ Add the following string to `config/app.php`
 
 ```
 Astrotomic\Notifynder\NotifynderSenderEmailServiceProvider::class,
+```
+
+### Step 3
+
+Add the following array to `config/notifynder.php`
+
+```
+'senders' => [
+    'email' => [
+        'view' => 'your.email.view.name',
+        'callback' => function(\Illuminate\Mail\Message $message, \Fenos\Notifynder\Models\Notification $notification) {
+            // handle the message and append the from, to, subject and so on
+        },
+        'store' => false, // wether you want to also store the notifications in database
+    ],
+],
 ```
