@@ -41,7 +41,7 @@ class EmailSender implements SenderContract
             });
         }
 
-        if($store) {
+        if ($store) {
             return $sender->send($this->notifications);
         }
 
