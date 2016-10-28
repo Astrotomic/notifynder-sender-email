@@ -1,4 +1,4 @@
-# Notifynder 4 - Laravel 5
+# Notifynder 4 Email Sender - Laravel 5
 
 [![GitHub release](https://img.shields.io/github/release/astrotomic/notifynder-sender-email.svg?style=flat-square)](https://github.com/astrotomic/notifynder-sender-email/releases)
 [![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg?style=flat-square)](https://raw.githubusercontent.com/astrotomic/notifynder-sender-email/master/LICENSE)
