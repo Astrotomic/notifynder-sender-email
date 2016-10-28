@@ -1,4 +1,5 @@
 <?php
+
 namespace Astrotomic\Notifynder;
 
 use Astrotomic\Notifynder\Senders\EmailSender;

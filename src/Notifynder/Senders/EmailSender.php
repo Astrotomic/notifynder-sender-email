@@ -1,4 +1,5 @@
 <?php
+
 namespace Astrotomic\Notifynder\Senders;
 
 use Fenos\Notifynder\Contracts\SenderContract;
