@@ -2,8 +2,8 @@
 
 namespace Astrotomic\Notifynder;
 
-use Astrotomic\Notifynder\Senders\EmailSender;
 use Illuminate\Support\ServiceProvider;
+use Astrotomic\Notifynder\Senders\EmailSender;
 
 class NotifynderSenderEmailServiceProvider extends ServiceProvider
 {
