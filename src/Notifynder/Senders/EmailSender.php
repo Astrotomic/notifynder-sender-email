@@ -2,10 +2,10 @@
 
 namespace Astrotomic\Notifynder\Senders;
 
-use Fenos\Notifynder\Contracts\SenderContract;
-use Fenos\Notifynder\Contracts\SenderManagerContract;
 use Mail;
 use Illuminate\Mail\Message;
+use Fenos\Notifynder\Contracts\SenderContract;
+use Fenos\Notifynder\Contracts\SenderManagerContract;
 
 class EmailSender implements SenderContract
 {
