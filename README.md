@@ -45,6 +45,7 @@ Add the following array to `config/notifynder.php`
         'view' => 'your.email.view.name',
         'callback' => function(\Illuminate\Mail\Message $message, \Fenos\Notifynder\Models\Notification $notification) {
             // handle the message and append the from, to, subject and so on
+            return $message;
         },
         'store' => false, // wether you want to also store the notifications in database
     ],
