@@ -1,7 +1,7 @@
 {
   "name": "astrotomic/notifynder-sender-email",
   "description": "Email Sender for the Notifynder package.",
-  "keywords": ["notifications", "laravel"],
+  "keywords": ["notifications", "notifynder", "laravel", "email"],
   "license": "MIT",
   "authors": [
     {
