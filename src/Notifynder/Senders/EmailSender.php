@@ -2,15 +2,15 @@
 
 namespace Astrotomic\Notifynder\Senders;
 
-use Fenos\Notifynder\Traits\SenderCallback;
 use Illuminate\Mail\Message;
+use Fenos\Notifynder\Traits\SenderCallback;
 use Fenos\Notifynder\Contracts\SenderContract;
 use Fenos\Notifynder\Contracts\SenderManagerContract;
 
 class EmailSender implements SenderContract
 {
     use SenderCallback;
-    
+
     /**
      * @var array
      */
