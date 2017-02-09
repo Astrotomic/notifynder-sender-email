@@ -43,11 +43,30 @@ Add the following array to `config/notifynder.php`
 'senders' => [
     'email' => [
         'view' => 'your.email.view.name',
-        'callback' => function(\Illuminate\Mail\Message $message, \Fenos\Notifynder\Models\Notification $notification) {
-            // handle the message and append the from, to, subject and so on
-            return $message;
-        },
         'store' => false, // wether you want to also store the notifications in database
     ],
 ],
+```
+
+Register the sender callback in your `app/Providers/AppServiceProvider.php`
+
+```php
+<?php
+namespace App\Providers;
+
+use Illuminate\Support\ServiceProvider;
+use Astrotomic\Notifynder\Senders\EmailSender;
+use Illuminate\Mail\Message as MailMessage;
+use Fenos\Notifynder\Builder\Notification;
+
+class AppServiceProvider extends ServiceProvider
+{
+    public function boot()
+    {
+        app('notifynder.sender')->setCallback(EmailSender::class, function (MailMessage $message, Notification $notification) {
+            // handle the message and append the from, to, subject and so on
+            return $message;
+        });
+    }
+}
 ```
